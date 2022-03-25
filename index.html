@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+
+    <div id="cabecario">
+        <h1>Conversor de moedas</h1>
+    </div>
+    <div class="caixaprincipal">
+        <p class="paragrafo"> Conversor <b>de</b> </p>
+        <select class="select">
+            <option> R$ Real Brasileiro </option>
+        </select>
+        <p class="paragrafo">Converter <b>para</b> </p>
+        <select class="select" id="select-moedas">
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+        </select>
+        <p class="paragrafo"><b>Valor</b></p>
+        <input id="input" placeholder=" R$ 10.000,00" type="number">
+        <button id="botao"> Converter</button>
+        <div class="caixa2">
+            <div class="caixa3">
+                <img src="./Conversor de moedas/brasil.png">
+                <p class="paragrafo"> Real</p>
+                <p class="paragrafo-negrito" id="input-real"> R$ 10.000,00</p>
+            </div>
+            
+                <img src="./Conversor de moedas/seta.png">
+        
+            <div class="caixa3">
+                <img id="bandeira" src="./Conversor de moedas/eua.png">
+                <p class="paragrafo" id="texto-moeda">Dólar Americano</p>
+                <p class="paragrafo-negrito" id="input-dolar">US$ 2.00,00</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<style>
+    * {
+        font-family: 'arial', sem serifa;
+        padding:0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body{background: #2C2C2C;
+}
+
+    #cabecario {
+        background-color: blue;
+        width: 375px;
+        height: 66px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    h1 {
+        color: #F4F4F4;
+        text-align: center;
+        font-size: 26px;
+        padding-top: 17px;
+    }
+
+    .caixaprincipal {
+        background-color: #e5e5e5;
+        width: 375px;
+        padding: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .select {
+        width: 327px;
+        height: 48px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        outline: none;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #input {
+        width: 327px;
+        height: 48px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        outline: none;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .paragrafo {
+        padding-bottom: 6px;
+        font-size: 14px;
+    }
+
+    .caixa2 {
+        text-align: center;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+    }
+
+    .caixa3 {
+        text-align: center;
+        margin:5px;
+    }
+
+    #botao {
+        display: block;
+        cursor: pointer;
+        width: 327px;
+        height: 48px;
+        border: none;
+        border-radius: 23px;
+        margin-bottom: 36px;
+        background-color: #CDD728;
+        color: #201e1e;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #botao:active{
+        opacity: 0.5;
+    }
+
+    .paragrafo-negrito{
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+<script src="./script.js">
+</script>
+</html>
